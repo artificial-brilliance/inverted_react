@@ -39,7 +39,7 @@ To get started
 The following example shows what happens when asking the LLM a question that it cannot know because (at the time the code was run) the iphone 15 was not released yet and descriptions of its release date were (most-likely) not in any training data.
 
 ```yaml
-$ ./scripts/run.sh 'when was the iphone 15 released'
+$ pdm run start 'when was the iphone 15 released'
 >
 > Response:
 Observation: The user is asking when the iPhone 15 was released.
@@ -57,7 +57,7 @@ Final Answer: The iPhone 15 was released on September 15, 2023.
 Now compare this from an example using the traditional ReAct framework approach from the [artificial-brilliance/react](https://github.com/artificial-brilliance/react) repo.
 
 ```yaml
-$ ./scripts/run.sh 'when was the iphone 15 released'
+$ pdm run start 'when was the iphone 15 released'
 >
 > Response:
 Thought: I need to use a tool to find out when the iPhone 15 was released.
